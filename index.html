@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-section-1">
+        <a href="./index.html"><span class="logo1">SHOP</span>LANE</a>
+      </div>
+      <div class="nav-section-2">
+        <a class="menu" href="./index.html">HOME</a>
+        <a class="menu" href="#clothing-section">CLOTHING</a>
+        <a class="menu" href="#accessories-section">ACCESSORIES</a>
+      </div>
+      <div class="nav-section-3">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for Clothing and Accessories"
+          />
+        </div>
+        <div class="search-box-side"></div>
+        <a class="search-icon" href="#"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a class="cart" href="./checkout.html"
+          ><i class="fa-solid fa-cart-shopping"></i>
+          <div class="cart-num cart-sec">0</div></a
+        >
+        <a class="user" href="#"
+          ><img class="user" src="./profile_display.jpg"
+        /></a>
+
+        <a class="hamburger-menu" href="#"><i class="fa-solid fa-bars"></i></a>
+        <a href="#" class="cross"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="hamburger-list">
+        <a class="menu" href="./index.html">HOME</a>
+        <a class="menu" href="#clothing-section">CLOTHING</a>
+        <a class="menu" href="#accessories-section">ACCESSORIES</a>
+      </div>
+    </header>
+    <main>
+      <img
+        id="project-logo"
+        src="./projectLogo.png"
+        alt="Edyoda-Project-Logo"
+      />
+      <div class="carousel">
+        <div class="banner">
+          <img src="https://shoplane.netlify.app/img/img1.png" />
+          <img src="https://shoplane.netlify.app/img/img2.png" />
+          <img src="https://shoplane.netlify.app/img/img3.png" />
+          <img src="https://shoplane.netlify.app/img/img4.png" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="online-store-section">
+        <p class="footer-heading">ONLINE STORE</p>
+        <a href="#" class="footer-links">MEN CLOTHING</a>
+        <a href="#" class="footer-links">WOMEN CLOTHING</a>
+        <a href="#" class="footer-links">MEN ACCESSORIES</a>
+        <a href="#" class="footer-links">WOMEN ACCESSORIES</a>
+      </div>
+      <div class="helpful-links-section">
+        <p class="footer-heading">HELPFUL LINKS</p>
+        <a href="#" class="footer-links">HOME</a>
+        <a href="#" class="footer-links">ABOUT</a>
+        <a href="#" class="footer-links">CONTACT</a>
+      </div>
+      <div class="partners-section">
+        <p class="footer-heading">PARTNERS</p>
+        <a href="#" class="footer-links">ZARA</a>
+        <a href="#" class="footer-links">PANTALOONS</a>
+        <a href="#" class="footer-links">LEVIS</a>
+        <a href="#" class="footer-links">UCB</a>
+        <a href="#" class="footer-links">+ MANY MORE</a>
+      </div>
+      <div class="address-section">
+        <p class="footer-heading">ADDRESS</p>
+        <a href="#" class="footer-links">BUILDING 101</a>
+        <a href="#" class="footer-links">CENTRAL AVENUE</a>
+        <a href="#" class="footer-links">LA - 902722</a>
+        <a href="#" class="footer-links">UNITED STATES</a>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/018f9edac6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="./index.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".banner").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+        });
+      });
+    </script>
+  </body>
+</html>
